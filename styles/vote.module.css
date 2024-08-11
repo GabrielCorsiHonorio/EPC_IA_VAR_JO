@@ -1,0 +1,146 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #3666F5;
+    padding: 20px;
+    position: relative;
+    padding-top: 70px; /* Espaço para o header fixo */
+}
+
+.header {
+    background-color: #122251;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Os botões podem quebrar linha em telas pequenas */
+}
+
+.nav_link {
+    background-color: #3666F5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.nav_link:hover {
+    background-color: #1e3a74;
+}
+
+.blocksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre os blocos */
+    width: 100%;
+    max-width: 100%;
+}
+
+.block {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Pequeno espaçamento entre os botões */
+}
+
+.optionButton {
+    background-color: #122251;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+    flex: 1; /* Faz com que os botões ocupem espaço igual */
+}
+
+.optionButton:hover {
+    background-color: #1e3a74;
+}
+
+.selected {
+    background-color: #3666F5; /* Cor azul quando selecionado */
+}
+
+.verifyButton {
+    background-color: #ff9f1c;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: auto;
+}
+
+.verifyButton:hover {
+    background-color: #e68a00;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #122251;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    .header {
+        justify-content: center;
+        padding: 10px 5px;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 10px; /* Reduz espaço entre botões no mobile */
+    }
+
+    .verifyButton {
+        width: 100%;
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 20px;
+    }
+
+    .block {
+        max-width: 100%;
+    }
+}
