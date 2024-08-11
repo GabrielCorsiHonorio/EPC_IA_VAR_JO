@@ -31,8 +31,9 @@ const Index = () => {
         <div className={styles.pageContainer}>
             <header className={styles.header}>
                 <nav className={styles.nav}>   
-                    <button className={styles.nav_link} onClick={() => router.push('/')}>Home</button>
-                    <button className={styles.nav_link} onClick={() => router.push('/infos')}>Infos</button>
+                    <button className={styles.nav_link} onClick={() => router.push('/')}>À propos de nous</button>
+                    <button className={styles.nav_link} onClick={() => router.push('/infos')}>Information</button>
+                    <button className={styles.nav_set} >Vote</button>
                 </nav>
             </header>
 
@@ -45,13 +46,13 @@ const Index = () => {
                                 className={`${styles.optionButton} ${selections[index] === 'Verdadeiro' ? styles.selected : ''}`} 
                                 onClick={() => handleSelection('Verdadeiro', index)}
                             >
-                                Verdadeiro
+                                Dentro
                             </button>
                             <button 
                                 className={`${styles.optionButton} ${selections[index] === 'Falso' ? styles.selected : ''}`} 
                                 onClick={() => handleSelection('Falso', index)}
                             >
-                                Falso
+                                Fora
                             </button>
                         </div>
                         {results[index] && <p className={styles.result}>{results[index]}</p>}
