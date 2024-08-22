@@ -46,13 +46,13 @@ const Index = () => {
                                 className={`${styles.optionButton} ${selections[index] === 'Verdadeiro' ? styles.selected : ''}`} 
                                 onClick={() => handleSelection('Verdadeiro', index)}
                             >
-                                Dans
+                                Dedans
                             </button>
                             <button 
                                 className={`${styles.optionButton} ${selections[index] === 'Falso' ? styles.selected : ''}`} 
                                 onClick={() => handleSelection('Falso', index)}
                             >
-                                Hors
+                                Dehors
                             </button>
                         </div>
                         {results[index] && <p className={styles.result}>{results[index]}</p>}
