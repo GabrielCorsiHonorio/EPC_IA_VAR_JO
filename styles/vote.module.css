@@ -4,13 +4,13 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: #fffdd0;
+    background-color:#fffdd0;
     padding: 20px;
     position: relative;
     padding-top: 70px; /* Espaço para o header fixo */
-}
-
-.header {
+  }
+  
+  .header {
     background-color: #122251;
     padding: 10px;
     border-radius: 5px;
@@ -22,35 +22,49 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
-}
-
-.nav {
+  }
+  
+  .nav {
     display: flex;
     align-items: center;
     gap: 20px; /* Espaçamento entre os botões */
     flex-wrap: wrap; /* Os botões podem quebrar linha em telas pequenas */
-}
-
-.nav_link {
+  }
+  
+  .nav_link {
     background-color: #122251;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-}
-
-.nav_link:hover {
+  }
+  
+  .nav_link:hover {
     background-color: #1e3a74;
-}
-
-.nav_set {
+  }
+  
+  .nav_set {
     background-color: #1e3a74;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+  }
+  
+  
+  .pageContent {
+    padding: 1rem;
+  }
+
+  /* Página Container */
+.pageContainer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 .blocksContainer {
@@ -129,10 +143,12 @@
     font-weight: bold;
 }
 
+  
+
 /* Media Query para dispositivos móveis */
 @media (max-width: 768px) {
     .header {
-        justify-content: center;
+        /* justify-content: center; */
         padding: 10px 5px;
     }
 
@@ -152,4 +168,12 @@
     .block {
         max-width: 100%;
     }
+
+    .image {
+        width: 90%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+
 }

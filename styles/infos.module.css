@@ -1,0 +1,128 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:#fffdd0;
+    padding: 20px;
+    position: relative;
+    padding-top: 70px; /* Espaço para o header fixo */
+  }
+  
+  .header {
+    background-color: #122251;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os botões */
+    flex-wrap: wrap; /* Os botões podem quebrar linha em telas pequenas */
+  }
+  
+  .nav_link {
+    background-color: #122251;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav_link:hover {
+    background-color: #1e3a74;
+  }
+  
+  .nav_set {
+    background-color: #1e3a74;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .pageContent {
+    padding: 1rem;
+  }
+
+  /* Página Container */
+.pageContainer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+/* .header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+} */
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Conteúdo Principal */
+.mainContent {
+    padding: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+/* .sectionTitle {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sectionText {
+    font-size: 16px;
+    color: #555;
+} */
+
+/* .sectionList {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.listItem {
+    margin-bottom: 10px;
+}
+
+.nestedList {
+    padding-left: 20px;
+} */
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e3a74;
+    color: #fff;
+}

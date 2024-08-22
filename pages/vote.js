@@ -14,14 +14,14 @@ const Index = () => {
     };
 
     const handleVerification = () => {
-        const correctAnswers = ['Verdadeiro', 'Falso', 'Verdadeiro'];
+        const correctAnswers = ['Falso', 'Verdadeiro', 'Verdadeiro'];
         const newResults = selections.map((selection, index) => {
             if (selection === null) {
-                return 'Por favor, faça uma escolha.';
+                return "S'il vous plaît, faites un choix.";
             } else if (selection === correctAnswers[index]) {
-                return 'Correto!';
+                return 'Correct!';
             } else {
-                return 'Errado!';
+                return 'Faux!';
             }
         });
         setResults(newResults);
@@ -36,7 +36,7 @@ const Index = () => {
                     <button className={styles.nav_set} >Vote</button>
                 </nav>
             </header>
-
+            <div className={styles.pageContent}>
             <div className={styles.blocksContainer}>
                 {[0, 1, 2].map((index) => (
                     <div className={styles.block} key={index}>
@@ -46,13 +46,13 @@ const Index = () => {
                                 className={`${styles.optionButton} ${selections[index] === 'Verdadeiro' ? styles.selected : ''}`} 
                                 onClick={() => handleSelection('Verdadeiro', index)}
                             >
-                                Dentro
+                                Dans
                             </button>
                             <button 
                                 className={`${styles.optionButton} ${selections[index] === 'Falso' ? styles.selected : ''}`} 
                                 onClick={() => handleSelection('Falso', index)}
                             >
-                                Fora
+                                Hors
                             </button>
                         </div>
                         {results[index] && <p className={styles.result}>{results[index]}</p>}
@@ -61,8 +61,10 @@ const Index = () => {
             </div>
 
             <button className={styles.verifyButton} onClick={handleVerification}>
-                Verificar
+            Pour vérifier
             </button>
+
+            </div>
         </div>
     );
 };

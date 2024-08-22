@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color:#fffdd0;
+  background-color: #f4f4f4;
   padding: 20px;
   position: relative;
   padding-top: 70px; /* Espaço para o header fixo */
@@ -109,6 +109,14 @@
   font-size: 1rem;
   line-height: 1.6;
 }
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e3a74;
+  color: #fff;
+}
+
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
