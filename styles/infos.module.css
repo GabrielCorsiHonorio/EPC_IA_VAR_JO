@@ -126,3 +126,15 @@
     background: #1e3a74;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .header {
+        /* justify-content: center; */
+        padding: 10px 5px;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 10px; /* Reduz espaço entre botões no mobile */
+    }
+}

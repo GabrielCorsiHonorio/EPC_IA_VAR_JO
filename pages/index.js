@@ -18,6 +18,7 @@ const Index = () => {
         <div className={styles.pageContent}>
         <section className={styles.heroSection}>
           <img src="/images/us.jpg" alt="Our Team" className={styles.heroImage} />
+          <img src="/images/us2.jpg" alt="Our Team" className={styles.heroImage} />
         </section>
         <section className={styles.teamSection}>
           <div className={styles.teamMember}>
@@ -39,7 +40,7 @@ const Index = () => {
           <div className={styles.teamMember}>
             <img src="/images/yujia.jpg" alt="Yujia" className={styles.memberImage} />
             <div className={styles.memberInfo}>
-            <h1>Yujia</h1>
+            <h1>Yujia Guo</h1>
             <h3>Directrice de l'Intelligence Artificielle et de l'Analyse des Données</h3>
               <p>Responsable du développement et de l'application d'algorithmes d'intelligence artificielle et d'analyse de données pour améliorer la précision des décisions d'arbitrage. Elle dirige l'équipe de scientifiques de données et d'ingénieurs en IA, en se concentrant sur la création de modèles applicables à différentes disciplines sportives.</p>
             </div>

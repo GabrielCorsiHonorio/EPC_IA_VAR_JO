@@ -120,6 +120,17 @@
 
 /* Estilos responsivos */
 @media (max-width: 768px) {
+  .header {
+    /* justify-content: center; */
+    padding: 10px 5px;
+}
+
+.nav {
+    justify-content: center;
+    gap: 10px; /* Reduz espaço entre botões no mobile */
+}
+
+
   .teamSection {
     flex-direction: column;
   }
