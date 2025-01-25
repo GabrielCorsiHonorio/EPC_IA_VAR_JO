@@ -1,165 +1,89 @@
+/* CSS Styles for Gabriel Corsi Honório Page */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+
 .pageContainer {
+  background-color: #123716;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background-color: #f4f4f4;
-  padding: 20px;
-  position: relative;
-  padding-top: 70px; /* Espaço para o header fixo */
-}
-
-.header {
-  background-color: #122251;
-  padding: 10px;
-  border-radius: 5px;
-  width: 100%;
-  position: fixed;
+  align-items: center;
+  position: fixed; /* Garante que ocupe toda a tela */
   top: 0;
   left: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
+  height: 100%; /* Altura total da tela */
+  width: 100%; /* Largura total da tela */
+  margin: 0; /* Remove qualquer margem extra */
+  padding: 0; /* Remove qualquer preenchimento extra */
+  overflow: hidden; /* Remove barras de rolagem */
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 20px; /* Espaçamento entre os botões */
-  flex-wrap: wrap; /* Os botões podem quebrar linha em telas pequenas */
+
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Abhaya Libre', serif;
+  color: #daa520;
 }
 
-.nav_link {
-  background-color: #122251;
-  color: white;
+.buttonsContainer {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  margin: 0 10px;
   padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-.nav_link:hover {
-  background-color: #1e3a74;
-}
-
-.nav_set {
-  background-color: #1e3a74;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-}
-
-
-.pageContent {
-  padding: 1rem;
-}
-
-.heroSection {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.heroImage {
-  width: 100%;
-  max-width: 800px; /* Ajustado para ser mais apropriado para a visualização em tela grande */
-  height: auto;
-  border-radius: 8px;
-}
-
-.teamSection {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.teamMember {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap; /* Permite que os membros da equipe se ajustem em dispositivos menores */
-}
-
-.memberImage {
-  width: 80px; /* Reduzido para tamanhos menores */
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.memberInfo {
-  max-width: 100%; /* Ajustado para se ajustar ao tamanho da tela */
-  flex: 1; /* Permite que o texto use o espaço restante */
-}
-
-.missionSection {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.missionSection h2 {
-  font-size: 1.25rem; /* Ajustado para melhor visibilidade em telas menores */
-  margin-bottom: 1rem;
-}
-
-.missionSection p {
   font-size: 1rem;
-  line-height: 1.6;
+  font-weight: bold;
+  color: #aab898;
+  background-color: #123716;
+  border: 2px solid #aab898;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: 'Arimo',sans-serif;
 }
 
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: #1e3a74;
-  color: #fff;
-}
-
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-  .header {
-    /* justify-content: center; */
-    padding: 10px 5px;
-}
-
-.nav {
-    justify-content: center;
-    gap: 10px; /* Reduz espaço entre botões no mobile */
+.button:hover {
+  background-color: #aab898;
+  color: #123716;
 }
 
 
-  .teamSection {
+@media (max-width: 550px) {
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .buttonsContainer {
+    display: flex;
     flex-direction: column;
   }
 
-  .teamMember {
-    flex-direction: column;
-    text-align: center;
+  .button{
+    margin: 10px;
+
+    font-size: 0.8rem;
   }
 
-  .memberImage {
-    width: 60px; /* Ajustado para tamanhos menores em telas pequenas */
-    height: 60px;
-  }
-
-  .missionSection h2 {
-    font-size: 1.1rem;
-  }
-
-  .missionSection p {
-    font-size: 0.9rem;
-  }
 }
 
-@media (max-width: 480px) {
-  .heroImage {
-    max-width: 100%;
+@media (max-width: 400px) {
+
+  .title {
+    font-size: 2rem;
   }
 
-  .teamMember {
-    gap: 1rem;
+  .button{
+    margin: 7px;
+
+    font-size: 0.7rem;
   }
+
 }
