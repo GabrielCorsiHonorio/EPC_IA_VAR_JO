@@ -93,11 +93,12 @@
 
 
  .pageContent {
-    display: flex;
-    background-color: #e2dccd;
-    color: #333;
-    height: 100%;
-    padding-top: 120px;
+  display: flex;
+  background-color: #e2dccd;
+  color: #333;
+  padding-top: 120px;
+  overflow: hidden;
+  height: 100vh;
   }
 
 .mainContent{
@@ -106,11 +107,13 @@
 }
 
 .section{
+  display: inline-block;
     padding: 10px;
     border-radius: 10px;
     background-color: #aab898;
     margin-bottom: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 .sectionTitle{
@@ -125,28 +128,8 @@
   gap: 20px; 
 }
 
-.reverse {
-  flex-direction: row-reverse; 
-}
-
-.circle_container {
-  flex-shrink: 0; 
-  width: 150px; 
-  height: 150px;
-  border-radius: 20px; 
-  overflow: hidden; 
-
-}
-
-.circle_image {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
-}
-
 
 .sectionText{
-  flex: 1;
   text-align: justify;
 }
 

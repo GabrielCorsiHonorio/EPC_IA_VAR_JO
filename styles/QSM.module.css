@@ -15,7 +15,7 @@
   }
   
   .header {
-    display: inline-flex;
+    display: flex;
     position: fixed;
     width: 100%;
     flex-direction: column;
@@ -102,6 +102,7 @@
     /* height: 100vh; */
     padding-top: 120px;
     overflow: hidden;
+    height: 100%;
   }
 
 .mainContent{
@@ -130,8 +131,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 20 px; 
-  
+  gap: 20px; 
+
 }
 
 .reverse {
@@ -211,9 +212,9 @@
     .sectionText{
       flex: 1 1 auto;
     }
-    /* .navContainer {
+    .navContainer {
       overflow-x: scroll; 
-    } */
+    }
 
   }
 
@@ -237,5 +238,4 @@
 
 
 } 
-
 

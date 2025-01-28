@@ -12,9 +12,9 @@ const Contact = () => {
         <a  className={styles.title} onClick={() => router.push('/')}>Gabriel Corsi Honório</a>
         <div className={styles.navContainer}>
           <nav className={styles.nav}>   
-          <a className={styles.nav_link} onClick={() => router.push('/AreaDeInteresse')}>Áreas de Interesse</a>
-          <a className={styles.nav_set}>Contatos/CV</a>
-          <a className={styles.nav_link} onClick={() => router.push('/QuemSouEu')}>Quem sou eu</a>
+          <a className={styles.nav_link} onClick={() => router.push('/AreaDeInteresse')}>Interest Areas</a>
+          <a className={styles.nav_set}>Contacts/CV</a>
+          <a className={styles.nav_link} onClick={() => router.push('/QuemSouEu')}>About me</a>
         </nav>
         </div>
       </header>
@@ -26,17 +26,20 @@ const Contact = () => {
 
         <section className={styles.section} id="vue-ensemble">
           <h2 className={styles.sectionTitle}>Contacts</h2>
-          <div className={`${styles.sectionBlock}`}>
-          <div className={styles.circle_container}>
-        </div>
+          <div className={styles.sectionBlock}>
+          <a href="mailto:gabriel.corsi@ensta-paris.fr" className={styles.email_link}> gabriel.corsi@ensta-paris.fr 
+          <img src="/images/email-icon.png" alt="Ícone de email" className={styles.imagem} />
+          </a>
           </div>
         </section>
 
+
+        
+
         <section className={styles.section} id="vue-ensemble">
           <h2 className={styles.sectionTitle}>CV</h2>
-          <div className={`${styles.sectionBlock} ${styles.reverse}`}>
-          <div className={styles.circle_container}>
-        </div>
+          <div className={styles.sectionBlock}>
+           <a href="/images/Gabriel_CORSI_HONORIO_CV_ING.pdf" download class="download-link" className={styles.download}>Click here to download</a>
           </div>
         </section>
 

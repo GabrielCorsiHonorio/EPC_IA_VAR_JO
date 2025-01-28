@@ -12,9 +12,9 @@ const QSM = () => {
         <a  className={styles.title} onClick={() => router.push('/')}>Gabriel Corsi Honório</a>
         <div className={styles.navContainer}>
           <nav className={styles.nav}>   
-          <a  className={styles.nav_link} onClick={() => router.push('/AreaDeInteresse')}>Áreas de Interesse</a>
-          <a  className={styles.nav_link} onClick={() => router.push('/contatosCV')}>Contatos/CV</a>
-          <a  className={styles.nav_set} >Quem sou eu</a>
+          <a  className={styles.nav_link} onClick={() => router.push('/AreaDeInteresse')}>Interest Areas</a>
+          <a  className={styles.nav_link} onClick={() => router.push('/contatosCV')}>Contacts/CV</a>
+          <a  className={styles.nav_set} >About me</a>
         </nav>
         </div>
       </header>
