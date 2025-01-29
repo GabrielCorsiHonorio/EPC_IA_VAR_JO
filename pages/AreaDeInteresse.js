@@ -73,7 +73,7 @@ const AdI = () => {
         <section className={styles.section}>
           <div className={styles.sectionBlock}>
           <p className={styles.sectionText}>
-          This space is designed to share ideas for projects I’m interested in developing or launching. The goal is to engage with people and companies who share similar interests. 
+          This space is designed to share ideas for projects I'm interested in developing or launching. The goal is to engage with people and companies who share similar interests. 
           </p>
           </div>
         </section>
@@ -95,7 +95,12 @@ const AdI = () => {
           </div>
 
           <div className={styles.filterContainer}>
-            <Filter className={styles.filterIcon} />
+          <img 
+                src="/images/filter-icon.png" 
+                alt="Filter icon" 
+                className={styles.filterIcon} 
+                onClick={() => console.log('Filtro clicado')} 
+              />
             <span className={styles.filterText}>
               Filtering by: {selectedTags.join(", ") || "None"}
             </span>
