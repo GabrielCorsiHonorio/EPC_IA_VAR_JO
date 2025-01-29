@@ -96,7 +96,7 @@
 
 
  .pageContent {
-    /* position: fixed; */
+    position: static;
     /* display: inline-block; */
     background-color: #e2dccd;
     color: #333;

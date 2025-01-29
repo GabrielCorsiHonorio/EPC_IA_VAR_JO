@@ -7,7 +7,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    margin: 0;
     padding: 0;
   }
   
@@ -209,5 +208,8 @@
     padding-top: 100px;
   }
 
+  .title{
+    margin-right: 20px;
+  }
 
 } 
