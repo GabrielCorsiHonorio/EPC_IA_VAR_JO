@@ -11,7 +11,7 @@
     padding: 0;
     height: 100vh;
     /* width: 100; */
-    /* overflow: hidden; */
+    overflow: hidden;
   }
   
   .header {
@@ -96,8 +96,8 @@
 
 
  .pageContent {
-    position: static;
-    /* display: inline-block; */
+    position:static;
+    display: block;
     background-color: #e2dccd;
     color: #333;
     /* height: 100vh; */
@@ -242,6 +242,16 @@
 
   }
 
+  
+@media (max-width: 380px) {
+
+  .section{
+    display: inline-block;
+      min-width: 250px;
+  }
+  
+
+}
 
 @media (max-width: 370px) {
 
@@ -260,15 +270,10 @@
     padding-top: 100px;
   }
 
-
-}
-
-@media (max-width: 380px) {
-
-  .section{
-    display: inline-block;
-      min-width: 250px;
+  .title{
+    margin-right: 20px;
   }
-  
+
+
 
 }
