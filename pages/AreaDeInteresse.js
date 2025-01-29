@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 import styles from '../styles/AdI.module.css';
 import { useState } from "react";
-import { Tag, Filter } from "lucide-react";
 
 const AdI = () => {
   const router = useRouter();
