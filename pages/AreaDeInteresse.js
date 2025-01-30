@@ -5,34 +5,37 @@ import { useState } from "react";
 const AdI = () => {
   const router = useRouter();
 
-  const [tags, setTags] = useState(["Inteligencia artificial", "Controle automatico de veiculos", "Robotica", "Controle de energia"]);
+  const [tags, setTags] = useState(["Autonomous vehicles","Control systems", "Optimized control models", "Battery Energy Storage", "Energy market dynamics", "IoT", "Smart homes", "Health sensors", "Biomechanics"]);
   const [selectedTags, setSelectedTags] = useState([]);
   const [blocks, setBlocks] = useState([
     {
       id: 1,
-      title: "Project 1",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      tags: ["Inteligencia artificial", "Controle automatico de veiculos"],
+      title: "Exploring Quick-Response Control Systems Through Autonomous Vehicle Development",
+      text: "I believe my recent experiences with the autonomous car project I'm part of—focused on a small-scale, toy-like vehicle—have been fueling my growing interest in control systems. I know that various automatic braking technologies already exist and have been implemented in recent years, but I feel that something more is needed: a quick response to situations where human perception is limited. Decisions that are more complex than simply braking—such as swerving, maneuvering, and acting to resolve extremely challenging scenarios for us humans. \n\nMy intention is not for cars to become 100% autonomous, with everything left to the machines. Humans would still be the primary drivers of the vehicle, but in risky situations—like a person suddenly crossing the street or a runaway truck coming from behind—the system would take control and make the best decision. This approach does not aim to turn cars into fully autonomous vehicles but rather to create a quick-response technology that is less complex and, consequently, easier to disseminate. \n\nThe small-scale autonomous car model I’m developing in the project uses LIDAR and a camera as the foundation for navigation. I believe that integrating these sensors with an optimized control model has tremendous potential to reduce the number of vehicle-related accidents.  \nFor me, it’s unacceptable that we continue to face so many accidents on a daily basis—accidents that could be avoided through faster and more efficient control systems.  ",
+      tags: ["Autonomous vehicles","Control systems", "Optimized control models"],
     },
     {
       id: 2,
-      title: "Project 2",
-      text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      tags: ["Controle automatico de veiculos", "Robotica", "Controle de energia"],
+      title: "Optimizing Battery Energy Storage Systems for Residential Solar Energy Use",
+      text: "This interest stems from a research project I developed and wish to continue. The idea is to harness residential electricity generation through photovoltaic panels and store that energy. In contexts where there is no established electricity market, the project aims to complement the supply and reduce demand when solar production is no longer available. For example, in a house with photovoltaic panels, energy can be generated during the daylight hours. However, if the demand is low during this period, there might be underutilization of the generated energy.\n\nNow, in contexts with already established electricity markets, the use of batteries can lead to new behaviors in the market. The question would be to decide, during periods of high energy production and low demand, whether the best option would be to sell the energy or charge the battery to meet high demand in the home or even sell this energy in the future. There are countless possibilities, and I believe that finding the ideal sizing for these battery systems can drive the larger-scale use of renewable energy. The next step would be to develop a system that controls decisions such as storing, selling, supplying the residence, buying from the grid, among other options. This type of behavior, where people produce energy (not as their primary source of income) and consume it, characterizes the \"prosumer\" class.",
+      tags: ["Battery Energy Storage", "Optimized control models", "Energy market dynamics"],
     },
     {
       id: 3,
-      title: "Project 3",
-      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      tags: ["Inteligencia artificial", "Controle de energia"],
+      title: "Integrating IoT and Health Sensors for Enhanced Safety and Emergency Response in Smart Homes",
+      text: "After developing a 100% personal IoT project involving actuators and sensors controlled by a web application, I realized the vast array of opportunities these technologies offer to solve everyday problems. Although smart homes are no longer a novelty, my idea is to go further by integrating health sensors—implemented through well-known wearables—not only for monitoring but also to provide responses in emergency situations. The main focus would be on people living alone, with features aimed at managing emergencies, such as the ability to call ambulances, for example. The concept of this idea is still in a more abstract stage, but it is based on the principle that we can integrate residential technologies to promote greater safety and health. \n\nNote: This approach could also be adapted for situations like gender-based physical assaults or home invasions, for example.",
+      tags: ["IoT", "Smart homes", "Health technology"],
     },
     {
       id: 4,
-      title: "Project 4",
-      text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      tags: ["Inteligencia artificial", "Controle automatico de veiculos", "Robotica", "Controle de energia"],
+      title: "Advancing Biomechanical Devices for Improved Mobility and Health through Technology Integration",
+      text: "My interest in this type of project doesn’t stem from the goal of making major discoveries, but rather from the popularization of technologies, such as cost reduction, testing new materials, improving sensors and control systems, among others. I believe that many devices related to biomechanics can benefit people in various situations, especially those with mobility difficulties caused by illnesses or accidents.",
+      tags: ["Biomechanics", "Health technology","Optimized control models" ],
     },
   ]);
+
+  const text_note = `This space is designed to share ideas for projects I'm interested in developing or launching. The goal is to engage with people and companies who share similar interests. \nNote: Over time, I will write about my experiences with the projects I've worked on and add them in a separate section.`
+
 
   // Adiciona ou remove tags selecionadas para o filtro
   const toggleTag = (tag) => {
@@ -72,7 +75,7 @@ const AdI = () => {
         <section className={styles.section}>
           <div className={styles.sectionBlock}>
           <p className={styles.sectionText}>
-          This space is designed to share ideas for projects I'm interested in developing or launching. The goal is to engage with people and companies who share similar interests. 
+          {text_note}
           </p>
           </div>
         </section>
@@ -117,6 +120,11 @@ const AdI = () => {
                 </div>
                 <h2 className={styles.blockTitle}>{block.title}</h2>
                 <p className={styles.blockText}>{block.text}</p>
+                {/* {paragraphs.map((paragraph, index) => (
+                  <p key={index}>
+                    {paragraph}
+                  </p>
+                ))} */}
               </section>
             ))}
           </div>

@@ -42,10 +42,7 @@
     flex: 1;
     white-space: nowrap;
     scrollbar-width:none; 
-    /* align-items: center; */
     width: 40vw;
-    /* flex-direction: column; */
-
   }
   
   .nav {
@@ -55,7 +52,7 @@
     justify-content: space-evenly;
     overflow-x: auto; 
     cursor: pointer;
-    /* overflow: hidden; */
+
 }
 
 .nav::-webkit-scrollbar {
@@ -110,13 +107,12 @@
 
 .mainContent {
   display: flex;
-  margin: 0 auto; /* Centraliza o conteúdo */
+  margin: 0 auto;
   flex-direction: column;
   gap: 20px;
   width: 100%; 
   max-width: 1200px; 
   padding: 10px;
-  /* height: 100%; */
 }
 
 .section{
@@ -140,6 +136,9 @@
 .sectionText{
   text-align: justify;
   color: white;
+  margin-bottom: 1rem; /* Espaçamento entre parágrafos */
+  line-height: 1.6; 
+  white-space: pre-line;
 }
 
 
@@ -184,6 +183,7 @@
   border: none;
   cursor: pointer;
   color:#333;
+  font-size: 15px;
 }
 
 .tagButton:hover {
@@ -234,6 +234,8 @@
 
 .blockText {
   color: #555;
+  text-align: justify;
+  white-space: pre-line;
 }
 
 .blockTags {
@@ -245,7 +247,7 @@
 
 .blockTag {
   padding: 5px 10px;
-  font-size: 12px;
+  font-size: 13px;
   border-radius: 12px;
   /* background-color: #e0e0e0; */
   background-color: #aab898;
