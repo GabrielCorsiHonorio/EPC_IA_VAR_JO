@@ -12,6 +12,7 @@ const Index = () => {
                 <div className={styles.pageContainer}>
                     <h1 className={styles.title}>Gabriel Corsi Honório</h1>
                     <div className={styles.buttonsContainer}>
+                        <a  className={styles.button} onClick={() => router.push('/Experiences')}>Experiences</a>
                         <a  className={styles.button} onClick={() => router.push('/AreaDeInteresse')}>Interest Areas</a>
                         <a  className={styles.button} onClick={() => router.push('/contatosCV')}>Contacts/CV</a>
                         <a  className={styles.button} onClick={() => router.push('/QuemSouEu')}>About me</a>

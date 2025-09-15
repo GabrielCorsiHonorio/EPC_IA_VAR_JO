@@ -34,7 +34,7 @@ const AdI = () => {
     },
   ]);
 
-  const text_note = `This space is designed to share ideas for projects I'm interested in developing or launching. The goal is to engage with people and companies who share similar interests. \nNote: Over time, I will write about my experiences with the projects I've worked on and add them in a separate section.`
+  const text_note = `This space is designed to share ideas for projects I'm interested in developing or launching. The goal is to engage with people and companies who share similar interests.`
 
 
   // Adiciona ou remove tags selecionadas para o filtro
@@ -59,6 +59,9 @@ const AdI = () => {
         </a>
         <div className={styles.navContainer}>
           <nav className={styles.nav}>
+            <a  className={styles.nav_link} onClick={() => router.push('/Experiences')}>
+              Experiences
+              </a>
             <a className={styles.nav_set}>Interest Areas</a>
             <a className={styles.nav_link} onClick={() => router.push('/contatosCV')}>
               Contacts/CV

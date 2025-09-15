@@ -22,6 +22,7 @@ Today, I see that I’m still passionate about control systems projects, and I a
         <a  className={styles.title} onClick={() => router.push('/')}>Gabriel Corsi Honório</a>
         <div className={styles.navContainer}>
           <nav className={styles.nav}>   
+            <a  className={styles.nav_link} onClick={() => router.push('/Experiences')}>Experiences </a> 
           <a  className={styles.nav_link} onClick={() => router.push('/AreaDeInteresse')}>Interest Areas</a>
           <a  className={styles.nav_link} onClick={() => router.push('/contatosCV')}>Contacts/CV</a>
           <a  className={styles.nav_set} >About me</a>
