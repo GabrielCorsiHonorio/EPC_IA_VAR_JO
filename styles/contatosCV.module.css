@@ -39,11 +39,8 @@
     display: flex;
     flex: 1;
     white-space: nowrap;
-    scrollbar-width: none; 
-    /* align-items: center; */
+    scrollbar-width:none; 
     width: 40vw;
-    /* -ms-overflow-style: none;  */
-    /* overflow-x: auto;  */
   }
   
   .nav {
@@ -51,22 +48,19 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* overflow-x: auto;  */
+    overflow-x: auto; 
     cursor: pointer;
+
 }
 
 .nav::-webkit-scrollbar {
-  height: 5px;
+  height: 2px;
 }
 
 .nav::-webkit-scrollbar-thumb {
   background: #aab898; 
 }
 
-.nav::-webkit-scrollbar-thumb:hover {
-  background: #333;
-}
-  
 
   .nav_link {
     display: flex;
@@ -96,6 +90,7 @@
 
 
  .pageContent {
+
     position:static;
     display: block;
     background-color: #e2dccd;

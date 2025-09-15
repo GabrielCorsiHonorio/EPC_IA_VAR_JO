@@ -132,11 +132,41 @@
   background-color: #fff;
 }
 
+.sectiontype_professional {
+  text-align: left;
+  padding-left: 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+    background-color: #B89F98;
+  color: #38201A;
+}
+
+.sectiontype_academic {
+  text-align: left;
+  padding-left: 20px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+    background-color: #98A0B8;
+  color: #1A2238;
+}
+
+
 .sectionTitle {
   text-align: left;
   padding-left: 20px;
-  font-family: 'Arimo',sans-serif;
+ /* font-family: 'Arimo',sans-serif; */
 }
+
+.sectionData {
+  text-align: right;
+  padding-right:  30px;
+  font-size: 15px;
+  color: #53633F;
+}
+
+
 
 .sectionBlock {
   display: flex;
@@ -169,13 +199,15 @@
   flex: 1; /* O texto ocupa o restante do espaço */
 }
 
+
+
 .sectionText {
   text-align: justify;
   white-space: pre-line;
   /* margin-bottom: 1em; */
-  padding: 10px;
+  padding: 0 10px;
   font-size: 15px;
-  font-family: 'Arimo',sans-serif;
+  /* font-family: 'Arimo',sans-serif; */
 }
 
 
@@ -262,10 +294,6 @@
 
   .pageContent {
     padding-top: 100px;
-  }
-
-  .title{
-    margin-right: 20px;
   }
 
 
