@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import styles from '../styles/AdI.module.css';
 import { useState } from "react";
+import Head from 'next/head';
 
 const AdI = () => {
   const router = useRouter();
@@ -11,7 +12,7 @@ const AdI = () => {
     {
       id: 1,
       title: "Exploring Quick-Response Control Systems Through Autonomous Vehicle Development",
-      text: "I believe my recent experiences with the autonomous car project I'm part of—focused on a small-scale, toy-like vehicle—have been fueling my growing interest in control systems. I know that various automatic braking technologies already exist and have been implemented in recent years, but I feel that something more is needed: a quick response to situations where human perception is limited. Decisions that are more complex than simply braking—such as swerving, maneuvering, and acting to resolve extremely challenging scenarios for us humans. \n\nMy intention is not for cars to become 100% autonomous, with everything left to the machines. Humans would still be the primary drivers of the vehicle, but in risky situations—like a person suddenly crossing the street or a runaway truck coming from behind—the system would take control and make the best decision. This approach does not aim to turn cars into fully autonomous vehicles but rather to create a quick-response technology that is less complex and, consequently, easier to disseminate. \n\nThe small-scale autonomous car model I’m developing in the project uses LIDAR and a camera as the foundation for navigation. I believe that integrating these sensors with an optimized control model has tremendous potential to reduce the number of vehicle-related accidents.  \nFor me, it’s unacceptable that we continue to face so many accidents on a daily basis—accidents that could be avoided through faster and more efficient control systems.  ",
+      text: "I believe my recent experiences with the autonomous car project I'm part of focused on a small-scale, toy-like vehicle, have been fueling my growing interest in control systems. I know that various automatic braking technologies already exist and have been implemented in recent years, but I feel that something more is needed: a quick response to situations where human perception is limited. Decisions that are more complex than simply braking, such as swerving, maneuvering, and acting to resolve extremely challenging scenarios for us humans. \n\nMy intention is not for cars to become 100% autonomous, with everything left to the machines. Humans would still be the primary drivers of the vehicle, but in risky situations, like a person suddenly crossing the street or a runaway truck coming from behind, the system would take control and make the best decision. This approach does not aim to turn cars into fully autonomous vehicles but rather to create a quick-response technology that is less complex and, consequently, easier to disseminate. \n\nThe small-scale autonomous car model I’m developing in the project uses LIDAR and a camera as the foundation for navigation. I believe that integrating these sensors with an optimized control model has tremendous potential to reduce the number of vehicle related accidents.  \nFor me, it’s unacceptable that we continue to face so many accidents on a daily basis accidents that could be avoided through faster and more efficient control systems.  ",
       tags: ["Autonomous vehicles","Control systems", "Optimized control models"],
     },
     {
@@ -23,7 +24,7 @@ const AdI = () => {
     {
       id: 3,
       title: "Integrating IoT and Health Sensors for Enhanced Safety and Emergency Response in Smart Homes",
-      text: "After developing a 100% personal IoT project involving actuators and sensors controlled by a web application, I realized the vast array of opportunities these technologies offer to solve everyday problems. Although smart homes are no longer a novelty, my idea is to go further by integrating health sensors—implemented through well-known wearables—not only for monitoring but also to provide responses in emergency situations. The main focus would be on people living alone, with features aimed at managing emergencies, such as the ability to call ambulances, for example. The concept of this idea is still in a more abstract stage, but it is based on the principle that we can integrate residential technologies to promote greater safety and health. \n\nNote: This approach could also be adapted for situations like gender-based physical assaults or home invasions, for example.",
+      text: "After developing a 100% personal IoT project involving actuators and sensors controlled by a web application, I realized the vast array of opportunities these technologies offer to solve everyday problems. Although smart homes are no longer a novelty, my idea is to go further by integrating health sensors implemented through well-known wearables not only for monitoring but also to provide responses in emergency situations. The main focus would be on people living alone, with features aimed at managing emergencies, such as the ability to call ambulances, for example. The concept of this idea is still in a more abstract stage, but it is based on the principle that we can integrate residential technologies to promote greater safety and health. \n\nNote: This approach could also be adapted for situations like gender based physical assaults or home invasions, for example.",
       tags: ["IoT", "Smart homes", "Health technology"],
     },
     {
@@ -52,6 +53,13 @@ const AdI = () => {
     : blocks;
 
   return (
+
+          <>
+     <Head>
+        <link rel="icon" type="image/png" href="/images/page_icon.png" />
+      </Head> 
+
+
     <div className={styles.pageContainer}>
       <header className={styles.header}>
         <a className={styles.title} onClick={() => router.push('/')}>
@@ -134,6 +142,8 @@ const AdI = () => {
         </main>
       </div>
     </div>
+
+    </>
   );
 };
 

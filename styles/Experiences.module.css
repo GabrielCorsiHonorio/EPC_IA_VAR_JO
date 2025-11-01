@@ -204,12 +204,20 @@
 .sectionText {
   text-align: justify;
   white-space: pre-line;
-  /* margin-bottom: 1em; */
   padding: 0 10px;
   font-size: 15px;
-  /* font-family: 'Arimo',sans-serif; */
 }
 
+
+.text_link {
+  text-align: justify;
+  white-space: pre-line;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #53633F;
+  text-decoration: none;
+  font-size: 15px;
+}
 
 
 
@@ -296,6 +304,9 @@
     padding-top: 100px;
   }
 
+  .title{
+    margin-right: 20px;
+  }
 
 } 
 

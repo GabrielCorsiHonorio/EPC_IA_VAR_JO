@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import ReactMarkdown from 'react-markdown';
 import styles from '../styles/QSM.module.css';
-
+import Head from 'next/head';
 
 const QSM = () => {
     const router = useRouter();
@@ -18,6 +18,13 @@ Studying at a prestigious university in Brazil gave me the opportunity to take o
 
 Today, I see that I’m still passionate about control systems projects, and I also take pride in the knowledge I’ve gained in areas like mechanics and programming, fields that only enrich and enhance my professional growth.`
     return (
+
+            <>
+     <Head>
+        <link rel="icon" type="image/png" href="/images/page_icon.png" />
+      </Head> 
+
+
     <div className={styles.pageContainer}>
       <header className={styles.header}>
         <a  className={styles.title} onClick={() => router.push('/')}>Gabriel Corsi Honório</a>
@@ -60,7 +67,7 @@ Today, I see that I’m still passionate about control systems projects, and I a
         <div className={`${styles.sectionBlock} ${styles.reverse}`}>
           <div className={styles.imageWrapper}>
             <img 
-              src="/images/fotoCV.jpg" 
+              src="/images/_MG_1216_CV.png" 
               alt="Descrição da imagem" 
               className={styles.circleImage} 
             />
@@ -79,6 +86,8 @@ Today, I see that I’m still passionate about control systems projects, and I a
           </footer> */}
       </div>
   </div>
+
+  </>
     );
 };
 
