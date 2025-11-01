@@ -10,7 +10,23 @@ const Index = () => {
         <>
 
      <Head>
+        <meta property="og:title" content="Gabriel Corsi Honório's Portfolio" />
+        <meta property="og:description" content="Discover my experiences, interests, contacts, and more about me." />
+        <meta property="og:image" content="https://www.gabriel-ch.com.br/images/page_icon.png" />
+        <meta property="og:url" content="https://www.gabriel-ch.com.br" />
+        <meta property="og:type" content="website" />
+
+        <meta name="title" content="Gabriel Corsi Honório's Portfolio" />
+        <meta name="description" content="Discover my experiences, interests, contacts, and more about me." />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Gabriel Corsi Honório's Portfolio" />
+        <meta name="twitter:description" content="Discover my experiences, interests, contacts, and more about me." />
+        <meta name="twitter:image" content="https://www.gabriel-ch.com.br/images/page_icon.png" />
+
         <link rel="icon" type="image/png" href="/images/page_icon.png" />
+
+
       </Head>    
         <div className={styles.pageContainer}>
             <h1 className={styles.title}>Gabriel Corsi Honório</h1>
